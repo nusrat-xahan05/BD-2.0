@@ -26,7 +26,7 @@
 </head>
 
 <body class="bg-body font-Poppins">
-    <header class="max-w-[1440px] mx-auto text-secondary px-10">
+    <header class="max-w-[1440px] mx-auto text-secondary px-4 sm:px-10">
         <!-- ==================================================
                             NAVBAR PART START
          ================================================== -->
@@ -41,7 +41,7 @@
 
             <!-- ------- MENU ITEMS ------- -->
             <div>
-                <ul class="hidden sm:flex justify-center items-center gap-10 text-xl">
+                <ul class="hidden md:flex justify-center items-center gap-10 text-xl">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Contributors</a></li>
@@ -49,7 +49,7 @@
                         <a class="bg-primary px-5 py-3 rounded-md text-body font-semibold" href="#">Donate</a>
                     </li>
                 </ul>
-                <p class="sm:hidden">
+                <p class="md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -66,16 +66,16 @@
         <!-- ==================================================
                             BANNER PART START
          ================================================== -->
-        <section class="grid grid-cols-2 justify-between py-8">
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 justify-between py-8">
             <!-- ------- TEXT PART ------- -->
-            <div class="pt-6">
-                <h1 class="text-5xl font-bold leading-tight">Experience a journey of a thousand miles with just a single page</h1>
-                <p class="text-lg w-2/3 my-10 text-slate-300 capitalize">Join us exploring the most exciting adventures from the world you have ever felt before</p>
+            <div class="pt-6 md:col-span-2 lg:col-span-1">
+                <h1 class="text-3xl sm:text-[42px] lg:text-5xl font-bold leading-tight">Experience a journey of a thousand miles with just a single page</h1>
+                <p class="text-base md:text-lg sm:w-2/3 my-10 text-slate-300 capitalize">Join us exploring the most exciting adventures from the world you have ever felt before</p>
 
                 <!-- ------- BUTTONS ------- -->
-                <div class="flex gap-10">
-                    <button class="bg-primary text-black font-semibold px-10 py-3 rounded-md border border-primary">Get Started</button>
-                    <button class="flex gap-2 text-lg items-center font-semibold px-5 py-3 border rounded-md hover:bg-primary hover:border-primary hover:text-black">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+                    <button class="max-w-fit bg-primary text-black font-semibold px-10 py-3 rounded-md border border-primary">Get Started</button>
+                    <button class="max-w-fit flex gap-2 text-lg items-center font-semibold px-5 py-3 border rounded-md hover:bg-primary hover:border-primary hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -88,9 +88,9 @@
                 </div>
 
                 <!-- ------- COTRIBUTORS ------- -->
-                <div class="flex items-center mt-20 gap-5">
+                <div class="flex flex-wrap items-center mt-20 gap-5">
                     <h3 class="font-semibold pr-5 border-r-2">Contributors:</h3>
-                    <div class="flex justify-center items-center gap-5 opacity-50">
+                    <div class="flex flex-wrap justify-center items-center gap-5 opacity-50">
                         <img class="size-8" src="./images/brand-01.png" alt="" />
                         <img class="size-8" src="./images/brand-02.png" alt="" />
                         <img class="size-8" src="./images/brand-03.png" alt="" />
@@ -100,8 +100,8 @@
             </div>
 
             <!-- ------- BANNER IMAGE PART ------- -->
-            <div class="relative">
-                <img class="w-[60%] absolute -bottom-28 right-0 -z-10" src="./images/bg-banner.png" alt="" />
+            <div class="hidden md:block relative ">
+                <img class="w-full lg:w-[63%] absolute -top-36 lg:-top-54 xl:-top-64 right-0 lg:right-5 -z-10" src="./images/bg-banner.png" alt="" />
             </div>
         </section>
         <!-- ==================================================
